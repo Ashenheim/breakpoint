@@ -43,16 +43,16 @@
 body,html {
 	background: black;
 	color: white;
-	@include bp-small {
+	@include bp-huge {
 		background: red;
 	}
-	@include bp-medium {
+	@include bp-large {
 		background: blue;
 	}
-	@include bp-large {
+	@include bp-medium {
 		background: purple;
 	}
-	@include bp-huge {
+	@include bp-small {
 		background: grey;
 	}
 }

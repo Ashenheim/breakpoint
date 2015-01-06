@@ -491,22 +491,22 @@ body, html {
   background: black;
   color: white;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 1140px) {
   body, html {
     background: red;
   }
 }
-@media only screen and (min-width: 780px) {
+@media only screen and (max-width: 960px) {
   body, html {
     background: blue;
   }
 }
-@media only screen and (min-width: 960px) {
+@media only screen and (max-width: 780px) {
   body, html {
     background: purple;
   }
 }
-@media only screen and (min-width: 1140px) {
+@media only screen and (max-width: 480px) {
   body, html {
     background: grey;
   }
