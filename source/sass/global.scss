@@ -39,3 +39,20 @@
 
 // Shame
 @import 'shame';
+
+body,html {
+	background: black;
+	color: white;
+	@include bp-small {
+		background: red;
+	}
+	@include bp-medium {
+		background: blue;
+	}
+	@include bp-large {
+		background: purple;
+	}
+	@include bp-huge {
+		background: grey;
+	}
+}

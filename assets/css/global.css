@@ -486,3 +486,28 @@ h1[hidden] {
   display: block;
   background: red;
 }
+
+body, html {
+  background: black;
+  color: white;
+}
+@media only screen and (min-width: 480px) {
+  body, html {
+    background: red;
+  }
+}
+@media only screen and (min-width: 780px) {
+  body, html {
+    background: blue;
+  }
+}
+@media only screen and (min-width: 960px) {
+  body, html {
+    background: purple;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  body, html {
+    background: grey;
+  }
+}
