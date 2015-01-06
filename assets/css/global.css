@@ -1,0 +1,488 @@
+/*  ====================================
+    Imports
+    ==================================== */
+/*  Helpers
+	------------------------------------ */
+/*  ====================================
+    Global classes
+    ==================================== */
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,700);
+.disable-hover {
+  pointer-events: none;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Bourbon 4.0.2
+ * http://bourbon.io
+ * Copyright 2011-2014 thoughtbot, inc.
+ * MIT License */
+/*  ====================================
+	Variables
+	==================================== */
+/*  Layout
+    ------------------------------------ */
+/*  Colors
+    ------------------------------------ */
+/*  ====================================
+		Mixins and functions
+		==================================== */
+/*  Media queries
+		------------------------------------ */
+/*  Mixins and functions
+		------------------------------------ */
+/*  Extends
+		------------------------------------ */
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.container, .row {
+  *zoom: 1;
+}
+.container:before, .row:before {
+  content: " ";
+  display: table;
+}
+.container:after, .row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ====================================
+   Grid system
+   ==================================== */
+/*
+	Settings
+	------------------------------------ */
+/*
+	Functions
+	------------------------------------ */
+/*
+	Grid Systems
+	------------------------------------ */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 2.4em;
+}
+
+.column, .col-1, .col-2, .col-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-1 {
+  width: 33.33333%;
+}
+
+.col-2 {
+  width: 66.66667%;
+}
+
+.col-3 {
+  width: 100%;
+}
+
+/*  Foundation
+	------------------------------------ */
+/* ====================================
+	normalize.css v3.0.1 | MIT License | git.io/normalize
+	customised for boilerplate
+	==================================== */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+a {
+  background: transparent;
+}
+a:active, a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: yellow;
+  color: black;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+  text-transform: none;
+}
+
+select {
+  text-transform: none;
+}
+
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+/* ====================================
+ * General site styling
+ * ==================================== */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-smoothing: antialiased;
+}
+
+::-moz-selection {
+  background: #EA474B;
+  color: #ffffff;
+}
+
+::selection {
+  background: #EA474B;
+  color: #ffffff;
+}
+
+/* ====================================
+ * Site typography.
+ * ==================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+
+h1, .alpha {
+  font-size: 2em;
+}
+
+h2, .beta {
+  font-size: 1.8em;
+}
+
+h3, .gamma {
+  font-size: 1.5em;
+}
+
+h4, .delta {
+  font-size: 1.2em;
+}
+
+h5, .epsilon {
+  font-size: 1.1em;
+}
+
+h6, .zeta {
+  font-size: 1.05em;
+}
+
+p {
+  margin: 0;
+}
+p + p {
+  margin-top: 0.4em;
+}
+
+a {
+  color: #EA474B;
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  color: #ff6569;
+}
+
+p a {
+  border-bottom: 2px solid transparent;
+}
+p a:hover, p a:active, p a:focus {
+  border-color: #ff6569;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #f4a3a5;
+  width: 100%;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/*  Components
+	------------------------------------ */
+/*  ====================================
+    Button styles
+    ==================================== */
+/*  ====================================
+    List styling (ul, ol, dl)
+    ==================================== */
+/*	====================================
+	Media
+	==================================== */
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*	====================================
+	Block elements for easier repurposing
+	==================================== */
+/*
+	Cover image, mostly used to let the image
+	stretch over the elements height and width
+	without relying on the CMS for the image size.
+	!important!
+	The div must have a specified width or height,
+	either by the children stretching it or it having
+	specified.
+
+	Usage:
+		<div class="cover-image" style="background-image: url(background-image.png)">
+			stuff
+			<img class="cover-image__image" src="background-image.png"/>
+		</div>
+	------------------------------------ */
+.cover-image {
+  background: center center no-repeat;
+  background-size: cover;
+}
+.cover-image .cover-image__image {
+  display: none;
+}
+
+/*  ====================================
+    Form styling
+    ==================================== */
+input[type=text],
+input[type=search],
+input[type=url],
+input[type=email],
+input[type=number],
+textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/*  Regions
+	------------------------------------ */
+/* ====================================
+   Header styling
+   ==================================== */
+/* ====================================
+   Navigation
+   ==================================== */
+/* ====================================
+   Footer
+   ==================================== */
+h1[hidden] {
+  display: block;
+  background: red;
+}

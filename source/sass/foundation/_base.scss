@@ -1,0 +1,24 @@
+/* ====================================
+ * General site styling
+ * ==================================== */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font: {
+    size: $font-size;
+    family: $font-family;
+    smoothing: antialiased;
+  };
+}
+
+::selection {
+  background: $color-main;
+  color: $white;
+}

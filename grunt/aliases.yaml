@@ -1,0 +1,15 @@
+default:
+- 'jshint'
+- 'concat'
+- 'sass:dev'
+- 'autoprefixer'
+- 'connect'
+- 'watch'
+
+build:
+- 'jshint'
+- 'concat'
+- 'uglify'
+- 'sass:dist'
+- 'autoprefixer'
+- 'uncss'
